@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D FABRICATORS | Custom 3D Acrylic & Plastic Signage Cape Town</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        neonBlue: '#00f0ff',
+                        neonRed: '#ff2d55',
+                        neonYellow: '#ffcc00',
+                        neonGreen: '#00ff66',
+                        darkBg: '#090d16',
+                        darkCard: '#121827',
+                    },
+                    boxShadow: {
+                        'neon-blue': '0 0 20px rgba(0, 240, 255, 0.4)',
+                        'neon-red': '0 0 20px rgba(255, 45, 85, 0.4)',
+                        'neon-green': '0 0 20px rgba(0, 255, 102, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-text-blue {
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 25px rgba(0, 240, 255, 0.4);
+        }
+        .glow-text-red {
+            text-shadow: 0 0 10px rgba(255, 45, 85, 0.7), 0 0 25px rgba(255, 45, 85, 0.4);
+        }
+        .glass-panel {
+            background: rgba(18, 24, 39, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-neonBlue selection:text-black">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-amber-500 to-cyan-500 text-black text-xs sm:text-sm font-bold py-2 px-4 text-center tracking-wide">
+        <i class="fa-solid fa-triangle-exclamation mr-1"></i> BY APPOINTMENT ONLY — NO WALK-INS | LOCATED IN BONTEHEUWEL, CAPE TOWN
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-40 glass-panel border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-neonRed via-neonBlue to-neonGreen p-[2px] shadow-neon-blue group-hover:scale-105 transition-transform">
+                        <div class="w-full h-full bg-darkBg rounded-[6px] flex items-center justify-center">
+                            <span class="font-black text-xl text-cyan-400">3D</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-2xl tracking-wider text-white block leading-none">3D <span class="text-neonBlue">FABRICATORS</span></span>
+                        <span class="text-[10px] text-slate-400 font-medium tracking-widest uppercase block mt-1">Cape Town Signage Workshop</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
+                    <a href="#services" class="hover:text-neonBlue transition-colors">Services</a>
+                    <a href="#about" class="hover:text-neonBlue transition-colors">Why Choose Us</a>
+                    <a href="#gallery" class="hover:text-neonBlue transition-colors">Showcase</a>
+                    <a href="#contact" class="hover:text-neonBlue transition-colors">Contact</a>
+                </div>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20would%20like%20to%20get%20a%20quote%20for%203D%20signage." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-5 py-2.5 rounded-full shadow-neon-green transition-all hover:scale-105 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Quote</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#services" class="block text-slate-300 hover:text-neonBlue font-medium py-2">Services</a>
+            <a href="#about" class="block text-slate-300 hover:text-neonBlue font-medium py-2">Why Choose Us</a>
+            <a href="#gallery" class="block text-slate-300 hover:text-neonBlue font-medium py-2">Showcase</a>
+            <a href="#contact" class="block text-slate-300 hover:text-neonBlue font-medium py-2">Contact Us</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20would%20like%20to%20get%20a%20quote%20for%203D%20signage." 
+                   target="_blank" 
+                   class="w-full flex items-center justify-center gap-2 bg-emerald-500 text-black font-bold py-3 rounded-xl">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16">
+        <!-- Background Image Showcase with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="189206.jpg" alt="3D Fabricators Workshop Signage" class="w-full h-full object-cover object-center filter brightness-50 contrast-125 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/80 to-darkBg/60"></div>
+            <!-- Glow Accents -->
+            <div class="absolute top-1/4 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-1/4 right-10 w-72 h-72 bg-red-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/40 text-cyan-300 text-xs sm:text-sm font-semibold mb-6 shadow-neon-blue">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                CUSTOM 3D ACRYLIC & PLASTIC SIGNAGE WORKSHOP
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight uppercase leading-none mb-6">
+                MAKE YOUR BRAND <br class="hidden sm:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-neonYellow to-red-500 glow-text-blue">
+                    POP IN 3D
+                </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed mb-8">
+                Custom fabricated 3D plastic & acrylic illuminated letters, logos, and business signage. High-impact craftsmanship based in <strong class="text-white font-semibold">Bonteheuwel, Cape Town</strong>.
+            </p>
+
+            <!-- Location & Appointment Notice Card -->
+            <div class="max-w-xl mx-auto mb-10 p-4 rounded-xl glass-panel border border-amber-500/40 flex items-center justify-center gap-3 text-amber-300 text-sm font-medium">
+                <i class="fa-solid fa-calendar-check text-xl text-amber-400 shrink-0"></i>
+                <span><strong>Notice:</strong> Workshop visits are strictly <u>by appointment only</u>. No walk-ins.</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20would%20like%20to%20get%20a%20quote%20for%203D%20signage." 
+                   target="_blank" 
+                   class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold px-8 py-4 rounded-xl text-lg shadow-neon-green hover:scale-105 transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Get Instant Quote</span>
+                </a>
+                
+                <a href="tel:0691234187" 
+                   class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 font-bold px-6 py-4 rounded-xl text-lg transition-all hover:border-cyan-400">
+                    <i class="fa-solid fa-phone text-cyan-400"></i>
+                    <span>Call 069 123 4187</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold text-neonBlue tracking-widest mb-2">Our Capabilities</h2>
+                <p class="text-3xl sm:text-5xl font-extrabold text-white">Custom Signage Solutions</p>
+                <p class="text-slate-400 mt-4">We specialize in designing and manufacturing high-durability, stunning 3D plastic and acrylic signboards tailored for businesses, shops, and offices.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:shadow-neon-blue transition-all">
+                        <i class="fa-solid fa-font"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Acrylic Lettering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision-cut acrylic letters crafted in various thicknesses, colors, and finishes to make your shop name stand out with depth.</p>
+                    <span class="text-xs font-semibold text-cyan-400 inline-flex items-center gap-1">Glossy & Matt Finishes <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-red-500/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center justify-center text-2xl mb-6 group-hover:shadow-neon-red transition-all">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Illuminated Neon & LED Signs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Backlit and face-lit 3D signs that glow brightly day and night. Energy-efficient LED modules for maximum visual impact.</p>
+                    <span class="text-xs font-semibold text-red-400 inline-flex items-center gap-1">Internal LED Backlighting <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:shadow-neon-blue transition-all">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Company Logos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Turn flat brand logos into multi-layered 3D masterworks for corporate reception areas, boardrooms, and storefronts.</p>
+                    <span class="text-xs font-semibold text-amber-400 inline-flex items-center gap-1">Custom Brand Color Matching <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:shadow-neon-green transition-all">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Shopfront Branding</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Complete exterior retail signage fabrication designed to attract passing traffic and give your store a professional look.</p>
+                    <span class="text-xs font-semibold text-emerald-400 inline-flex items-center gap-1">Weather-Resistant Plastics <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 transition-all">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Plastic Fabrication</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Tailor-made plastic moulding, acrylic boxes, displays, and architectural structure accents built to your dimensions.</p>
+                    <span class="text-xs font-semibold text-purple-400 inline-flex items-center gap-1">Precision Laser Cutting <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 / Callout Card -->
+                <div class="p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-cyan-950/60 border border-cyan-500/40 flex flex-col justify-between">
+                    <div>
+                        <span class="text-neonBlue text-xs font-bold uppercase tracking-widest">Custom Request?</span>
+                        <h3 class="text-2xl font-black text-white mt-2 mb-3">Have a unique design in mind?</h3>
+                        <p class="text-slate-300 text-sm mb-6">Send us your vector logo or sketch via WhatsApp for a fast consultation and estimate.</p>
+                    </div>
+                    <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20have%20a%20custom%20signage%20design%20I%20want%20a%20quote%20for." 
+                       target="_blank" 
+                       class="w-full text-center bg-cyan-400 hover:bg-cyan-300 text-black font-extrabold py-3 rounded-xl transition-all shadow-neon-blue">
+                        <i class="fa-brands fa-whatsapp mr-1"></i> Send Your Specs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Banner & Showcase Section -->
+    <section id="gallery" class="py-20 relative overflow-hidden bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <span class="text-neonRed text-xs font-bold uppercase tracking-widest">Featured Workshop Craftsmanship</span>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white mt-2 mb-6 leading-tight">
+                        BRIGHT, DURABLE & PRECISION BUILT 3D SIGNS
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        At <strong class="text-white">3D FABRICATORS</strong>, we turn raw acrylic and plastic sheets into glowing 3D artwork. Whether you need oversized illuminated channel letters or sleek indoor reception logos, our Bonteheuwel workshop is equipped to fabricate your vision.
+                    </p>
+                    
+                    <ul class="space-y-3 text-slate-300 mb-8 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-neonGreen"></i>
+                            <span>Heavy-duty outdoor grade plastic & acrylic materials</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-neonGreen"></i>
+                            <span>Vibrant LED lighting integration for maximum night visibility</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-neonGreen"></i>
+                            <span>Custom dimensions built to exact business shopfront specs</span>
+                        </li>
+                    </ul>
+
+                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Appointment Booking Policy</p>
+                            <p class="text-slate-400 text-xs mt-0.5">To provide undivided attention to every client's custom build, workshop visits are strictly by appointment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Showcase Image Card -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="relative rounded-2xl overflow-hidden p-2 bg-gradient-to-r from-cyan-500 via-red-500 to-yellow-400 shadow-2xl">
+                        <div class="relative rounded-xl overflow-hidden bg-slate-950">
+                            <img src="189206.jpg" alt="3D Fabrications Custom Signage Showcase" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 text-white">
+                                <span class="bg-cyan-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider">Featured Fabrication</span>
+                                <h3 class="text-xl font-bold mt-2">Vibrant 3D Channel Letter Signage</h3>
+                                <p class="text-xs text-slate-300 mt-1">Multi-color acrylic faces with integrated internal LED illumination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Form Section -->
+    <section id="contact" class="py-20 relative bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Information Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-neonBlue text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Build Your 3D Sign</h2>
+                        <p class="text-slate-400 mt-4 text-sm leading-relaxed">
+                            Ready to upgrade your store or office branding? Contact our Bonteheuwel workshop today to schedule a consultation or request an estimated quote.
+                        </p>
+                    </div>
+
+                    <!-- Location Notice Box -->
+                    <div class="p-5 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-200">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Workshop Visit Policy</h4>
+                                <p class="text-xs text-amber-200/80 mt-1">Strictly <strong>By Appointment Only</strong>. Please contact us via phone or WhatsApp to schedule a time before visiting our Bonteheuwel location.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Details List -->
+                    <div class="space-y-4">
+                        <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20would%20like%20to%20get%20a%20quote%20for%203D%20signage." 
+                           target="_blank" 
+                           class="flex items-center gap-4 p-4 rounded-xl glass-panel hover:border-emerald-500/50 transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">WhatsApp Us Direct</span>
+                                <span class="text-white font-bold text-base">069 123 4187</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:0691234187" class="flex items-center gap-4 p-4 rounded-xl glass-panel hover:border-cyan-500/50 transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Phone Support</span>
+                                <span class="text-white font-bold text-base">069 123 4187</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:Fabricatorsd980@gmail.com" class="flex items-center gap-4 p-4 rounded-xl glass-panel hover:border-red-500/50 transition-all group">
+                            <div class="w-12 h-12 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Email Enquiries</span>
+                                <span class="text-white font-bold text-sm sm:text-base break-all">Fabricatorsd980@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-panel">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Workshop Location</span>
+                                <span class="text-white font-bold text-base">Bonteheuwel, Cape Town</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Quote Form -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 rounded-3xl glass-panel border border-slate-800 relative">
+                        <h3 class="text-2xl font-bold text-white mb-2">Request a Signage Quote</h3>
+                        <p class="text-slate-400 text-sm mb-6">Fill in details below to generate a pre-formatted WhatsApp message or send an email quote request.</p>
+
+                        <form id="quote-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Your Name</label>
+                                    <input type="text" id="client-name" placeholder="John Doe" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Phone / WhatsApp Number</label>
+                                    <input type="tel" id="client-phone" placeholder="082 123 4567" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Type of Signage Required</label>
+                                <select id="sign-type" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors text-sm">
+                                    <option value="3D Acrylic Letters">3D Acrylic Letters</option>
+                                    <option value="Illuminated LED 3D Sign">Illuminated LED 3D Sign</option>
+                                    <option value="Company Logo Board">Company Logo Board</option>
+                                    <option value="Shopfront Signage">Shopfront Signage</option>
+                                    <option value="Custom Plastic Fabrication">Custom Plastic Fabrication</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Estimated Dimensions or Details</label>
+                                <textarea id="sign-details" rows="4" placeholder="Mention size (e.g., 2m x 1m), colors, or if lighting is needed..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                <button type="button" onclick="sendToWhatsApp()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-neon-green transition-all">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    <span>Quote via WhatsApp</span>
+                                </button>
+                                
+                                <button type="button" onclick="sendToEmail()" class="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-neon-blue transition-all">
+                                    <i class="fa-solid fa-paper-plane text-lg"></i>
+                                    <span>Quote via Email</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-extrabold text-xl text-white tracking-wider">3D <span class="text-neonBlue">FABRICATORS</span></span>
+                <p class="text-xs text-slate-500 mt-1">Bonteheuwel, Cape Town, South Africa | By Appointment Only</p>
+            </div>
+
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="tel:0691234187" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-phone mr-1"></i> 069 123 4187</a>
+                <a href="mailto:Fabricatorsd980@gmail.com" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> Email Us</a>
+            </div>
+
+            <p class="text-xs text-slate-600">&copy; <span id="year"></span> 3D Fabricators. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/27691234187?text=Hi%203D%20Fabricators,%20I%20would%20like%20to%20get%20a%20quote%20for%203D%20signage." 
+           target="_blank" 
+           class="w-14 h-14 bg-emerald-500 text-black rounded-full flex items-center justify-center text-3xl shadow-neon-green hover:scale-110 transition-transform relative group"
+           aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-darkBg animate-ping"></span>
+        </a>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form WhatsApp Submission Handler
+        function sendToWhatsApp() {
+            const name = document.getElementById('client-name').value || 'Not provided';
+            const phone = document.getElementById('client-phone').value || 'Not provided';
+            const signType = document.getElementById('sign-type').value;
+            const details = document.getElementById('sign-details').value || 'No extra details';
+
+            const text = `Hi 3D Fabricators, I would like to request a quote:%0A%0A` +
+                         `*Name:* ${encodeURIComponent(name)}%0A` +
+                         `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                         `*Signage Type:* ${encodeURIComponent(signType)}%0A` +
+                         `*Details:* ${encodeURIComponent(details)}`;
+
+            window.open(`https://wa.me/27691234187?text=${text}`, '_blank');
+        }
+
+        // Form Email Submission Handler
+        function sendToEmail() {
+            const name = document.getElementById('client-name').value || 'Not provided';
+            const phone = document.getElementById('client-phone').value || 'Not provided';
+            const signType = document.getElementById('sign-type').value;
+            const details = document.getElementById('sign-details').value || 'No extra details';
+
+            const subject = encodeURIComponent(`Signage Quote Request - ${signType}`);
+            const body = encodeURIComponent(
+                `Hi 3D Fabricators,\n\nI would like to request a quote for 3D signage.\n\n` +
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Signage Type: ${signType}\n` +
+                `Details/Dimensions: ${details}\n\n` +
+                `Location Notice Acknowledged: Bonteheuwel, Cape Town (Appointment Only)`
+            );
+
+            window.location.href = `mailto:Fabricatorsd980@gmail.com?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
